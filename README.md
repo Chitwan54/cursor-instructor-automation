@@ -71,7 +71,7 @@ Cursor (when open)
 |---|---|
 | **Skill** | `.cursor/skills/content-reuse-library/` |
 | **Script** | `audit_colab_links.py` |
-| **What it does** | Audits Colab links in the content library, flags broken/outdated links, and suggests quiz gaps for a cohort. |
+| **What it does** | Audits Colab links and session content, writes `colab-audit.md`, then asks which optional updates to apply (quizzes, Drive copies, trim/skip markers, syllabus quiz column). |
 | **Config** | `content/da101-2029/sessions.yaml` |
 | **Manual trigger** | *"Audit content library for DA101"* |
 

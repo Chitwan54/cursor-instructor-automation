@@ -1,36 +1,104 @@
-# Content library — DA101 Term 4
-# Generated/updated by content-reuse-library skill
-# Run: python .cursor/skills/content-reuse-library/scripts/audit_colab_links.py ...
-
 sessions:
-  - session: 1
-    title: Intro to Data Analytics using Python
-    colab_links: []
-    audit_status: no_colab
-    quiz_notes: End-term exam session — no Colab expected
-    feedback_signals: []
-  - session: 3
-    title: Exploring the Entertainment Dataset – Data Loading and Cleaning using Pandas
-    colab_links:
-      - https://colab.research.google.com/drive/1-VqqSRfiHq_kVv61CgtkQMALsJ45pwu2
-    audit_status: pending
-    quiz_notes: ""
-    feedback_signals:
-      - "2026-05-14: pace of teaching (28%)"
-  - session: 4
-    title: Exploring the Entertainment Dataset – Data Transformation & Cleaning using Pandas
-    colab_links:
-      - https://colab.research.google.com/drive/1hRTaHy3POrA-BkcN43fasbdm2RyZNQIA
-    audit_status: pending
-    quiz_notes: ""
-    feedback_signals: []
-  - session: 10
-    title: Central limit theorem & Confidence interval - Walmart Case Study
-    colab_links:
-      - https://colab.research.google.com/drive/1Eq2cmrOsza2-s0gUmFNevzUpe4G_5X-S
-    audit_status: pending
-    quiz_notes: ""
-    feedback_signals: []
-
-# Sessions without Colab in syllabus export — flag for content-reuse-library audit
-# Sessions 2,5,6,7,8,9,11,12,13,14: run full syllabus export to populate
+- session: 1
+  title: Intro to Data Analytics using Python
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []
+- session: 2
+  title: Data Analytics Using Numpy
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals:
+  - '2026-05-09: Pace of Teaching / Communication style (NumPy sessions, avg ~4.5)'
+- session: 3
+  title: Exploring the Entertainment Dataset – Data Loading and Cleaning using Pandas
+  colab_links:
+  - https://colab.research.google.com/drive/1-VqqSRfiHq_kVv61CgtkQMALsJ45pwu2
+  audit_status: ok
+  quiz_notes: 'Opening quiz prepended; follow-up after IMDB CSV intro (merge checks). Quiz copy: drive/10vo77UjoxNMqB4a4eryD0IRpsNpWKkBJ'
+  feedback_signals:
+  - '2026-05-14 Group A: Pace of Teaching (28%) — same topic taught twice, avg 4.57'
+  link_checks:
+    https://colab.research.google.com/drive/1-VqqSRfiHq_kVv61CgtkQMALsJ45pwu2: ok
+- session: 4
+  title: Exploring the Entertainment Dataset –Data Transformation & Cleaning using
+    Pandas
+  colab_links:
+  - https://colab.research.google.com/drive/1hRTaHy3POrA-BkcN43fasbdm2RyZNQIA
+  audit_status: ok
+  quiz_notes: 'Opening quiz after ## Content; follow-up after drug pivot_table. Quiz copy: drive/17Dz9S5bvlRJwkY0iK-irZ1XX7He7KFnB'
+  feedback_signals: []
+  link_checks:
+    https://colab.research.google.com/drive/1hRTaHy3POrA-BkcN43fasbdm2RyZNQIA: ok
+- session: 5
+  title: Data Vizualization using Gaming Data- 1
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []
+- session: 6
+  title: Data Vizualization using Gaming Data- 2
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []
+- session: 7
+  title: 'Singles to Centuries: Understanding Sachin’s Scoring Patterns with Probability
+    Distributions'
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []
+- session: 8
+  title: Decoding Delivery Patterns – Feature Engineering with Real-World Logistics
+    Data
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []
+- session: 9
+  title: Descriptive Statistics & Probability- Aerofit Case Study
+  colab_links:
+  - https://colab.research.google.com/drive/1RrQTf72i2qETVkSMrT1UjpXZ1G38V2Y8
+  audit_status: ok
+  quiz_notes: 'Opening quiz (generic CI Q4); follow-up before multivariate section (Aerofit variance). Quiz copy: drive/1BNhxU2PpofkxYrw0VQZDsKllo1uWPbLh'
+  feedback_signals: []
+  link_checks:
+    https://colab.research.google.com/drive/1RrQTf72i2qETVkSMrT1UjpXZ1G38V2Y8: ok
+  syllabus_note: Internal sheet col D missing Colab URL (text label only) — restore link
+- session: 10
+  title: Central limit theorem & Confidence interval- Walmart Case Study
+  colab_links:
+  - https://colab.research.google.com/drive/1Eq2cmrOsza2-s0gUmFNevzUpe4G_5X-S
+  audit_status: ok
+  quiz_notes: 'Opening quiz only; Q4 uses hypothetical CI (no Walmart data needed). Quiz copy: drive/1xOn53DRuPwrL-HfzFzBEjb56cfgCfFHX'
+  feedback_signals: []
+  link_checks:
+    https://colab.research.google.com/drive/1Eq2cmrOsza2-s0gUmFNevzUpe4G_5X-S: ok
+- session: 11
+  title: What Drives the Price? – Predicting Used Car Value with Linear Regression
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []
+- session: 12
+  title: To Loan or Not to Loan? – Predicting Chances of Loan Repayment with Logistic
+    Regression
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []
+- session: 13
+  title: Cracking the 'Why' – Root Cause Analysis for E-commerce sales drop
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []
+- session: 14
+  title: Thinking like a Consultant – Guess Estimates & Business Scenarios
+  colab_links: []
+  audit_status: no_colab
+  quiz_notes: ''
+  feedback_signals: []

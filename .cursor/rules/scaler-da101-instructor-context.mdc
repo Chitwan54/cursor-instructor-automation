@@ -35,7 +35,7 @@ Chitwan Manchanda is an instructor for **Scaler School of Technology (SST)**, te
 | `classroom-feedback-analysis` | Sunday feedback DM analysis + rating trends |
 | `cohort-assignment-pipeline` | New cohort assignment setup (wraps `map-session-assignments`) |
 | `map-session-assignments` | Syllabus ↔ assignment ID mapping |
-| `content-reuse-library` | Colab audit, quiz gaps, content improvements |
+| `content-reuse-library` | Colab audit → report; optional quiz/Drive/syllabus updates (user confirms) |
 | `invoice-maker` | On hold — waiting for template |
 
 Config: `config/instructor-automation.yaml` · Ratings: `data/classroom_ratings.csv` · Feedback DM: [D0A8QEGSL3Y](https://scalerinternal.slack.com/archives/D0A8QEGSL3Y)
