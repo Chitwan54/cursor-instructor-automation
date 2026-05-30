@@ -1,0 +1,66 @@
+---
+description: Scaler SST instructor context for Data Analytics 101 (Term 4, Batch 2029)
+alwaysApply: true
+---
+
+# Data Analytics 101 — Instructor Context
+
+Chitwan Manchanda is an instructor for **Scaler School of Technology (SST)**, teaching **Data Analytics 101 — Term 4**.
+
+## Course & batches
+
+- **Course:** Data Analytics 101 (Term 4)
+- **Batches:** SST DA 101 2029 **Group A** and **Group B**
+- **Group C** is taught by Saurabh Kango (separate thread)
+- **Program:** Batch 2029, Trimester 4
+
+## Key links
+
+- **Public syllabus sheet:** https://docs.google.com/spreadsheets/d/1NUxw_bEcmkzPt7ZROyHQDdjTltyqNNtvzp48eTF2l2Q/edit?gid=2103434812#gid=2103434812
+- **Internal assignments syllabus (instructor uploads):** https://docs.google.com/spreadsheets/d/1imxzP8mIFM0TtgvYOOkcf0uSrzuomhEyrQQUSv3AYWo/edit?gid=2103434812#gid=2103434812
+- **Attendance — Group A:** https://docs.google.com/spreadsheets/d/1SK8PRs3AI5GSFs-FxGVieOhNan5wVBoa8oAJWV6Dx8s/edit?gid=460150322#gid=460150322
+- **Attendance — Group B:** https://docs.google.com/spreadsheets/d/1cCVg0Q9Ww9EwtJMQVAEI5yg1y9aby4kZVJhHC78BBzA/edit?gid=460150322#gid=460150322
+
+## Slack coordination
+
+- **Channel:** `#ug-classroomops-instructor` (Scaler internal)
+- **Course thread:** https://scalerinternal.slack.com/archives/C05QX9SHM0E/p1780036385964949?thread_ts=1777236917.045769&cid=C05QX9SHM0E
+- **Key contacts:** Rahul Kalwani (academic ops), Nishant Kumar (classroom ops), Mohamed Ebrahim & Miriyam Dominic (program), Kshitij (academic lead), Saurabh Kango (DA 101 Group C)
+
+## Automation skills (this repo)
+
+| Skill | Trigger |
+|-------|---------|
+| `daily-slack-review` | Morning digest, action items from Slack |
+| `classroom-feedback-analysis` | Sunday feedback DM analysis + rating trends |
+| `cohort-assignment-pipeline` | New cohort assignment setup (wraps `map-session-assignments`) |
+| `map-session-assignments` | Syllabus ↔ assignment ID mapping |
+| `content-reuse-library` | Colab audit, quiz gaps, content improvements |
+| `invoice-maker` | On hold — waiting for template |
+
+Config: `config/instructor-automation.yaml` · Ratings: `data/classroom_ratings.csv` · Feedback DM: [D0A8QEGSL3Y](https://scalerinternal.slack.com/archives/D0A8QEGSL3Y)
+
+## Scheduled automation (launchd)
+
+Loops restart automatically on macOS login via LaunchAgent `com.chitwan.instructor-automation`. Scripts are installed to `~/Library/Application Support/instructor-automation/scripts/` (macOS blocks launchd from Desktop). Re-install after script changes: `.cursor/scripts/install-instructor-automation.sh`.
+
+| Schedule | Script | Skill |
+|----------|--------|-------|
+| Daily 09:00 IST | `.cursor/scripts/daily-slack-loop.sh` | `daily-slack-review` |
+| Sunday 09:00 IST | `.cursor/scripts/sunday-feedback-loop.sh` | `classroom-feedback-analysis` |
+
+When a tick fires, it is appended to `~/Library/Application Support/instructor-automation/pending-ticks.jsonl` and a macOS notification is shown. The `.cursor/hooks.json` `stop` hook drains one pending tick per agent completion (up to 3 chained runs).
+
+**On any conversation in this repo:** if the pending queue is non-empty, process all queued ticks first (run the skill prompt, send Slack DM) unless the user explicitly needs something else urgently.
+
+Logs: `~/Library/Logs/instructor-automation/`. Stop loops: `.cursor/scripts/stop-instructor-loops.sh`.
+
+## Open action items
+
+- Assignments mapped (sessions 2–12) — **paste to internal syllabus** when Editor access granted
+- Rahul thread reply once syllabus updated
+
+## When assisting
+
+- Align assignments and class content with the syllabus sheet and updated lecture plan (class content was revised in early May).
+- Reference Group A and Group B separately when attendance or batch-specific work is involved.

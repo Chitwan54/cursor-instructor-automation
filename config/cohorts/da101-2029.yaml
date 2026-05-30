@@ -1,0 +1,26 @@
+slug: da101-2029
+course_name: Data Analytics 101 — Term 4
+batches: [Group A, Group B]
+syllabus:
+  public_url: https://docs.google.com/spreadsheets/d/1NUxw_bEcmkzPt7ZROyHQDdjTltyqNNtvzp48eTF2l2Q/edit?gid=2103434812
+  internal_url: https://docs.google.com/spreadsheets/d/1imxzP8mIFM0TtgvYOOkcf0uSrzuomhEyrQQUSv3AYWo/edit?gid=2103434812
+  paste_column: G
+assignment_sources:
+  - name: Python/DAV-1
+    sheet_id: 117UG9MLArvQ3c8RA8UDOLEXRGGBlDTM3u3dfyLXi-WU
+    tabs: [NumPy assessments, Pandas assessments, Data Viz assessments]
+  - name: DAV-2 Stats
+    sheet_id: 1GB88Ddqh35BlXus1VNvn4SjfhLC2NHoYVlHrWMzSmvQ
+    tabs: [Assessments]
+  - name: Feature Engineering
+    doc_id: 1WXDkyLmUomxOACFl7LnqLJ4Rpn_R6nOISoZZ81plFMs
+  - name: DSML Content Sheet
+    sheet_id: 1DMcEZGXUCmqSIx7krauAJcSKhCcqmeJ1sN_Ld7ZdanE
+    tabs: [Intro to ML and NN]
+mapping:
+  skip_sessions: [1]
+  combine_homework: true
+  output_csv: DA101_assignments_mapping.csv
+deliverables:
+  mapping_done: true
+  syllabus_pasted: false  # blocked: view-only access

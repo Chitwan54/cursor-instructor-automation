@@ -1,0 +1,39 @@
+# Instructor automation config — edit per course/client
+
+instructor:
+  name: Chitwan Manchanda
+  slack_user_id: U07KUJ3N5J7
+
+slack:
+  classroom_feedback_dm: D0A8QEGSL3Y
+  classroom_feedback_bot: U09C1PFKE9Z
+  ops_channel: C05QX9SHM0E
+  ops_channel_name: ug-classroomops-instructor
+  course_thread_ts: "1777236917.045769"
+
+courses:
+  da101_term4:
+    name: Data Analytics 101 — Term 4
+    batch_filter: "SST DA 101"          # only parse feedback matching this
+    syllabus_internal: "1imxzP8mIFM0TtgvYOOkcf0uSrzuomhEyrQQUSv3AYWo"
+    syllabus_gid: "2103434812"
+    ratings_csv: data/classroom_ratings.csv
+
+schedules:
+  daily_slack_review:
+    time: "09:00 IST"
+    loop_script: .cursor/scripts/daily-slack-loop.sh
+  weekly_feedback_analysis:
+    day: Sunday
+    time: "09:00 IST"
+    auto_dm: true
+    dm_user_id: U07KUJ3N5J7
+    loop_script: .cursor/scripts/sunday-feedback-loop.sh
+
+automation:
+  launchd_label: com.chitwan.instructor-automation
+  install_script: .cursor/scripts/install-instructor-automation.sh
+  starter_script: ~/Library/Application Support/instructor-automation/scripts/start-instructor-loops.sh
+  stop_script: .cursor/scripts/stop-instructor-loops.sh
+  pending_queue: ~/Library/Application Support/instructor-automation/pending-ticks.jsonl
+  logs_dir: ~/Library/Logs/instructor-automation

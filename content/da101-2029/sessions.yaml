@@ -1,0 +1,36 @@
+# Content library — DA101 Term 4
+# Generated/updated by content-reuse-library skill
+# Run: python .cursor/skills/content-reuse-library/scripts/audit_colab_links.py ...
+
+sessions:
+  - session: 1
+    title: Intro to Data Analytics using Python
+    colab_links: []
+    audit_status: no_colab
+    quiz_notes: End-term exam session — no Colab expected
+    feedback_signals: []
+  - session: 3
+    title: Exploring the Entertainment Dataset – Data Loading and Cleaning using Pandas
+    colab_links:
+      - https://colab.research.google.com/drive/1-VqqSRfiHq_kVv61CgtkQMALsJ45pwu2
+    audit_status: pending
+    quiz_notes: ""
+    feedback_signals:
+      - "2026-05-14: pace of teaching (28%)"
+  - session: 4
+    title: Exploring the Entertainment Dataset – Data Transformation & Cleaning using Pandas
+    colab_links:
+      - https://colab.research.google.com/drive/1hRTaHy3POrA-BkcN43fasbdm2RyZNQIA
+    audit_status: pending
+    quiz_notes: ""
+    feedback_signals: []
+  - session: 10
+    title: Central limit theorem & Confidence interval - Walmart Case Study
+    colab_links:
+      - https://colab.research.google.com/drive/1Eq2cmrOsza2-s0gUmFNevzUpe4G_5X-S
+    audit_status: pending
+    quiz_notes: ""
+    feedback_signals: []
+
+# Sessions without Colab in syllabus export — flag for content-reuse-library audit
+# Sessions 2,5,6,7,8,9,11,12,13,14: run full syllabus export to populate

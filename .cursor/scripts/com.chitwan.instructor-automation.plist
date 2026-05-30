@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.chitwan.instructor-automation</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/chitwan/Desktop/Scaler/Data Analytics 101/.cursor/scripts/start-instructor-loops.sh</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/chitwan/Library/Logs/instructor-automation/launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/chitwan/Library/Logs/instructor-automation/launchd.err.log</string>
+</dict>
+</plist>
